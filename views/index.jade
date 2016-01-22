@@ -1,0 +1,19 @@
+//this is index
+doctype html
+html
+	head
+		title Angular | Pagination
+		script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js")
+		script(src="main.js")
+		link(rel="stylesheet" type="text/css" href="style.css")
+
+	body(ng-app="app" ng-controller="appCtrl")
+		h1 Angular Pagination -no plugins
+		table
+			tr(ng-repeat="(index, value) in data" )
+				td {{value.name}}
+		div(class='table-controllers')
+			span.arrows(ng-model="leftArrow" ng-click="Arrow('left')") <-
+			.page-number(ng-model="pageNumber") {{pageNumber }}
+			span.arrows(ng-model="rightArrow" ng-click="Arrow('right')") ->
+			.display(ng-model="displayTotal" ng-click="displayMore()") 10

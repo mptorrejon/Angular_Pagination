@@ -1,0 +1,31 @@
+html body table {
+  display: inline-block;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+html body table tr td {
+  border-bottom: 1px solid #000;
+}
+html body .table-controllers {
+  margin-top: 20px;
+  display: table;
+  vertical-align: top;
+  border: 1px solid #000;
+  padding: 3px 8px;
+}
+html body .table-controllers .arrows {
+  display: inline-block;
+  cursor: pointer;
+}
+html body .table-controllers .arrows:hover {
+  color: #fff;
+  background: #000;
+}
+html body .table-controllers .page-number {
+  margin: 0px 10px;
+  display: inline-block;
+}
+html body .table-controllers .display {
+  display: inline-block;
+  margin-left: 20px;
+}
