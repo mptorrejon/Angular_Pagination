@@ -16,4 +16,5 @@ html
 			span.arrows(ng-model="leftArrow" ng-click="Arrow('left')") <-
 			.page-number(ng-model="pageNumber") {{pageNumber }}
 			span.arrows(ng-model="rightArrow" ng-click="Arrow('right')") ->
-			.display(ng-model="displayTotal" ng-click="displayMore()") 10
+			select(class="display" ng-model="displayTotal" ng-options="c as c.option for c in displayOptions" ng-change="changedValue(displayTotal)")
+				
